@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: #000;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 10px 7px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: #F0EDE9;
+  padding: 100px 15px;
+}
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #000;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: #000;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+footer {
+  background-color: #000;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+li{font-size: 24px;
+  font-weight: bold;
+  font-family: "Nunito"}
+
+.flexContainer{
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+}
+
+.flexContainer> div {
+  width: 33%;
+  text-align: center;
+  margin: 100px;
+  align-items: center;
+}
+
+
+.workGrid{
+  display: grid;
+  grid-template-columns: 25% 75;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  'logo1 logo1 info1'
+  'logo2 logo2 info2'
+  'logo3 logo3 info3';
+  margin: 60px;
+  background-color: black;
+  grid-gap: 60px;
+  padding: 80px
+}
+
+.item1 { grid-area: logo1; }
+.item2 { grid-area: info1; }
+.item3 { grid-area: logo2; }
+.item4 { grid-area: info2; }
+.item5 { grid-area: logo3; }
+.item6 { grid-area: info3; }
+
+
+
+h1{
+  text-align: center;
+  font-size: 36px;
+  font-family: Reem Kufi;
+}
+
+h4{color: #FFF;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Nunito";}
+h3{color: #FFF;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Nunito";}
+p{color: #FFF;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Nunito"}
+
+.name{color: white}
+
+.hoverMe {color: #FFF;
+  background-color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Nunito";
+  transition: 0.3s;} 
+
+.hoverMe:hover{color: #000;
+  background-color: white;
+  font-size: 36;
+  font-weight: bold;
+  font-family: "Nunito"}
+
+.ViewMore{
+max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+
+  .hoverMe2 {color: #FFF;
+    background-color: black;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Nunito";
+    transition: 0.3s;} 
+  
+  .hoverMe2:hover{color: #000;
+    background-color: white;
+    font-size: 36;
+    font-weight: bold;
+    font-family: "Nunito"}
+  
+
+
+body{background-color: #F0EDE9;}
+
+@media only screen and (max-width: 600px){   
+  .flexContainer{
+      display: flex;
+      flex-wrap: wrap;
+      background-color: black;
+      flex-direction: column;
+      margin: 60px;
+      
+  }
+  
+  .flexContainer> div {
+      width: 100%;
+      text-align: center;
+      margin: 60px;
+      align-items: center;
+  }
+  
+  
+  .workGrid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    'logo1' 
+    'info1'
+    'logo2' 
+    'info2'
+    'logo3' 
+    'info3';
+    margin: 60px;
+    background-color: black;
+    grid-gap: 60px;
+    padding: 80px;
+    text-align: center;
+  }
+  
+.item1 { grid-area: logo1; }
+.item2 { grid-area: info1; }
+.item3 { grid-area: logo2; }
+.item4 { grid-area: info2; }
+.item5 { grid-area: logo3; }
+.item6 { grid-area: info3; }
+
+.content {
+    max-width: 600px;
+    margin: 60px;
+    padding: 50px;
+    background-color: #000;
+    text-align: center;
+  }
+
+  .heroImg {
+    background-color: #F0EDE9;
+    padding: 60px 15px;
+  }
+
+  img .size1{
+      {max-width: 100%;
+        height: auto;}
+  }
+}
